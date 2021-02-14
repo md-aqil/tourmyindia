@@ -31,3 +31,9 @@ input {
 .closeIcon:hover {
     color:  #ff6634;
 }
+.dark {
+    background: #17182F;
+    position: relative;
+}
+
+

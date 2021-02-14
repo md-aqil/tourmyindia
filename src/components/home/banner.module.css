@@ -1,8 +1,20 @@
 
 .heroSection {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 100px );
     overflow: hidden;
+    position: relative;
+    
+}
+.heroSection:before{
+    content: "";
+    background: url(./particle.svg);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: -1;
 }
 .heading {
 font-weight: bold;
@@ -22,4 +34,15 @@ margin-top: 10px;
 }
 .titleSection {
     margin: 50px auto;
+}
+:global(.dark) .titleSection .subHeading , :global(.dark) .titleSection .heading {
+    color: #fff;
+}
+:global(.dark) .icon > g ellipse {
+    opacity: .1;
+}
+.icon {
+    position: relative;
+    top: -60px;
+    z-index: -1;
 }
