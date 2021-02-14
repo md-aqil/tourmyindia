@@ -1,0 +1,24 @@
+.siteHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.siteHeader .navBar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+.siteHeader .navBar ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    color: #4e4e4e;
+    display: block;
+    padding: 25px 15px;
+}
+.siteHeader .navBar ul li a:hover {
+    color: #FF6634;
+}
